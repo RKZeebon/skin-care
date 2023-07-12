@@ -1,7 +1,158 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: "Poppins", sans-serif;
+
+}
+
+header {
+    display: flex;
+
+}
+
+.header-left {
+    background-image: url(./assets/hero-bg.png);
+    width: 800px;
+    height: 820px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-left .navbar-top .logo {
+    text-align: center;
+    color: #FFF;
+    font-size: 36px;
+    margin-top: 75px;
+}
+
+.header-left .navbar-top .title {
+    color: #FFF;
+    text-align: center;
+    font-weight: 200;
+    margin-bottom: 90px;
+}
+
+.header-left nav {
+    background-color: #222220;
+    width: 280px;
+}
+
+.header-left nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.header-left nav ul a {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 400;
+
+}
+
+.header-left .hero-img img {
+    height: 824px;
+}
+
+.header-right {
+    width: 400px;
+
+}
+
+.header-right .top-links {
+    text-align: end;
+    font-weight: 500;
+    margin-top: 20px;
+
+}
+
+.header-right .top-links a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    margin-left: 50px;
+}
+
+.header-right .top-links a:last-child {
+
+    position: relative;
+}
+
+.header-right .top-links a:last-child::before {
+    content: "0";
+    position: absolute;
+    top: -20px;
+    left: 30%;
+    color: #E4A691;
+}
+
+.header-right .hero-content {
+    margin-top: 100px;
+    padding: 0 60px;
+    text-align: center;
+}
+
+.header-right .hero-content p {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1.6px;
+    margin-bottom: 20px;
+}
+
+.header-right .hero-content span {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: italic;
+    position: relative;
+}
+
+.header-right .hero-content span::before {
+    content: url(./assets/leaf-icon.png);
+    position: absolute;
+    left: -30px;
+
+}
+
+.header-right .hero-content button {
+    margin-top: 30px;
+
+}
+
+.btn {
+    font-size: 15px;
+    padding: 20px 60px;
+    border-radius: 50px;
+    border: none;
+}
+
+.btn-light {
+    background-color: #FFF;
+    border: 3px solid #DEB8AB;
+    font-weight: 600;
+}
+
+.btn-dark {
+    background-color: #DEB8AB;
+    font-size: 20px;
+
+}
+
+.btn-lined {
+    background-color: #FFF;
+    font-size: 20px;
+    border-radius: unset;
+    border-bottom: 3px solid #DEB8AB;
 }
